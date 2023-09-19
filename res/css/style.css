@@ -27,5 +27,15 @@ html{
     
 }
 #cookie:hover{
-    scale: (1.1);
+   transform: scale(1.1);
 }
+#clickUpgrade{border: none;
+font-size: 34px;
+cursor: pointer;
+transition: .3s ease;
+background-color: burlywood;
+text-align: center;
+display: table;
+margin: 0 auto;
+}
+#clickUpgrade:hover{transform: scale(1.1);}
