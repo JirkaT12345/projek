@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{font-family: 'VT323', monospace}
+html{
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cookie {
+    max-width: 500px;
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .3s ease;
+    
+
+}
+
+#counter{
+    text-align: center;
+    font-size: 70px;
+    
+}
+#cookie:hover{
+    scale: (1.1);
+}
