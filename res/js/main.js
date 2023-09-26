@@ -1,11 +1,43 @@
 const cookie = document.getElementById("cookie");
 const counter = document.getElementById("counter");
 const clickUpgrade = document.getElementById("clickUpgrade");
+const autoclickUpgrade = document.getElementById("autoclickUpgrade");
 
 
 let numberOfCookies = 0;
 let costOfClickUpgrade = 20;
 let clickUpgradeIncrease = 1;
+let autoclickIncrease = 0;
+let autoclick;
+let autoclickCost = 100;
+
+autoclickUpgrade.onclick = () => {
+    if (numberOfCookies >= autoclickCost) {
+        //odecist susenky 
+        numberOfCookies -= autoclickCost;
+        autoclickCost *= 2;
+        autoclickUpgrade.innerText = "Buy autoclick upgrade: " + autoclickCost;
+        //numberOfCookies = numberOfCookies - 100
+
+        //aktualizovat odstavec se susenkama
+        counter.innerText = "Cookies: " + numberOfCookies;
+        autoclickIncrease ++;
+        //clear
+        clearInterval(autoclick);
+
+        //spustit interval
+        autoclick = setInterval(() => {
+            //zvednout o nejake cislo
+            numberOfCookies += autoclickIncrease
+
+            //aktualizovat odstavec
+            counter.innerText = "Cookies: " + numberOfCookies;
+
+        }, 1000);
+
+    }
+}
+
 
 // {} - scope
 cookie.onclick = () => {
@@ -15,7 +47,7 @@ cookie.onclick = () => {
     // ++ inkrement
     numberOfCookies += clickUpgradeIncrease;
     console.log(numberOfCookies);
-    counter.innerHTML = "Cookies: " + numberOfCookies;
+    counter.innerText = "Cookies: " + numberOfCookies;
 };
 
 
@@ -39,7 +71,7 @@ clickUpgrade.onclick = clickUpgradeFunction;
 function cheats() {
     console.log("Cheats on");
     numberOfCookies += 1000000;
-    counter.innerHTML = "Cookies: " + numberOfCookies;
+    counter.innerText = "Cookies: " + numberOfCookies;
 }
 
 
@@ -48,5 +80,7 @@ function cheats() {
 
 const cheatsTwo = () => {
     numberOfCookies *= 2;
-    counter.innerHTML = "Cookies: " + numberOfCookies;
+    counter.innerText = "Cookies: " + numberOfCookies;
 }
+cheats();
+
