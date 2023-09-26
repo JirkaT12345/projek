@@ -15,7 +15,7 @@ html{
     max-width: 500px;
     width: 100%;
     display: table;
-    margin: 0 auto;
+    margin-left: 50px;
     transition: .3s ease;
     cursor: url('pickaxe.png'), auto;
     
@@ -25,6 +25,7 @@ html{
 #counter{
     text-align: center;
     font-size: 70px;
+    margin-left: 50px;
     
 }
 #cookie:hover{
@@ -37,7 +38,7 @@ transition: .3s ease;
 background-color: burlywood;
 text-align: center;
 display: table;
-margin: 0 auto;
+margin-right: 50px;
 }
 #clickUpgrade:hover{transform: scale(1.1);}
 
@@ -48,6 +49,13 @@ margin: 0 auto;
     background-color: burlywood;
     text-align: center;
     display: table;
-    margin: 0 auto;
+    margin-right: 50px;
+    margin-top: 5px;
     }
     #autoclickUpgrade:hover{transform: scale(1.1);}
+    .buttons {
+        float: right;
+    }
+    .container {
+        float: left;
+    }
