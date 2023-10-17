@@ -11,7 +11,7 @@ html{
     cursor: url('../img/pickaxe.png'), auto;
 }
 
-#Cobblestone {
+#Diamond {
     max-width: 300px;
     width: 100%;
     display: table;
@@ -29,7 +29,7 @@ html{
     color: white;
 
 }
-#Cobblestone:hover{
+#Diamond:hover{
    transform: scale(1.1);
 }
 #clickUpgrade{border: none;

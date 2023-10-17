@@ -64,6 +64,57 @@ counter.innerText = "Diamonds:" + numberOfCookies
 
 clickUpgrade.onclick = clickUpgradeFunction;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 //Vytvoření funkce
 //function název() {}
