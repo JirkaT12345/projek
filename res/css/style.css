@@ -5,19 +5,20 @@
     user-select: none;
  }
 html{
-    background-image: url(../img/back.jpg);
+    background-image: url(../img/back2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    cursor: url('pickaxe.png'), auto;
+    cursor: url('../img/pickaxe.png'), auto;
 }
 
-#cookie {
-    max-width: 500px;
+#Cobblestone {
+    max-width: 300px;
     width: 100%;
     display: table;
-    margin-left: 50px;
+    margin-top: 45px;
+    margin-left: 800px;
     transition: .3s ease;
-    cursor: url('pickaxe.png'), auto;
+    cursor: url('../img/pickaxe.png'), auto;
     
 
 }
@@ -25,17 +26,17 @@ html{
 #counter{
     text-align: center;
     font-size: 70px;
-    margin-left: 50px;
-    
+    color: white;
+
 }
-#cookie:hover{
+#Cobblestone:hover{
    transform: scale(1.1);
 }
 #clickUpgrade{border: none;
 font-size: 34px;
-cursor: url('pickaxe.png'), auto;
+cursor: url('../img/pickaxe.png'), auto;
 transition: .3s ease;
-background-color: burlywood;
+background-image: url(../img/backupgrade.png);
 text-align: center;
 display: table;
 margin-right: 50px;
@@ -44,9 +45,9 @@ margin-right: 50px;
 
 #autoclickUpgrade{border: none;
     font-size: 34px;
-    cursor: url('pickaxe.png'), auto;
+    cursor: url('../img/pickaxe.png'), auto;
     transition: .3s ease;
-    background-color: burlywood;
+    background-image: url(../img/backupgrade.png);
     text-align: center;
     display: table;
     margin-right: 50px;
@@ -57,5 +58,12 @@ margin-right: 50px;
         float: right;
     }
     .container {
-        float: left;
+        float: center;
     }
+.upgrade{float: right;text-align: center;}
+
+#hotbar{
+    margin-left: 580px;
+    margin-top: 30px;
+}
+

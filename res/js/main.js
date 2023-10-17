@@ -1,4 +1,4 @@
-const cookie = document.getElementById("cookie");
+const cookie = document.getElementById("Cobblestone");
 const counter = document.getElementById("counter");
 const clickUpgrade = document.getElementById("clickUpgrade");
 const autoclickUpgrade = document.getElementById("autoclickUpgrade");
@@ -15,12 +15,12 @@ autoclickUpgrade.onclick = () => {
     if (numberOfCookies >= autoclickCost) {
         //odecist susenky 
         numberOfCookies -= autoclickCost;
-        autoclickCost *= 2;
-        autoclickUpgrade.innerText = "Buy autoclick upgrade: " + autoclickCost;
+        autoclickCost += 50;
+        autoclickUpgrade.innerText = "Miner: " + autoclickCost;
         //numberOfCookies = numberOfCookies - 100
 
         //aktualizovat odstavec se susenkama
-        counter.innerText = "Cookies: " + numberOfCookies;
+        counter.innerText = "Diamonds: " + numberOfCookies;
         autoclickIncrease ++;
         //clear
         clearInterval(autoclick);
@@ -31,13 +31,12 @@ autoclickUpgrade.onclick = () => {
             numberOfCookies += autoclickIncrease
 
             //aktualizovat odstavec
-            counter.innerText = "Cookies: " + numberOfCookies;
+            counter.innerHTML = "Diamonds: " + numberOfCookies;
 
         }, 1000);
 
     }
 }
-
 
 // {} - scope
 cookie.onclick = () => {
@@ -47,7 +46,7 @@ cookie.onclick = () => {
     // ++ inkrement
     numberOfCookies += clickUpgradeIncrease;
     console.log(numberOfCookies);
-    counter.innerText = "Cookies: " + numberOfCookies;
+    counter.innerText = "Diamonds: " + numberOfCookies;
 };
 
 
@@ -57,7 +56,7 @@ const clickUpgradeFunction = () => {
         //pocet susenek a odectu 20
         numberOfCookies -= costOfClickUpgrade;
 //aktualizace odstavce
-counter.innerText = "Cookies:" + numberOfCookies
+counter.innerText = "Diamonds:" + numberOfCookies
         //zvedneme pocet susenek na kliknuti
         clickUpgradeIncrease++;
     }
@@ -65,13 +64,13 @@ counter.innerText = "Cookies:" + numberOfCookies
 
 clickUpgrade.onclick = clickUpgradeFunction;
 
-
+/*
 //Vytvoření funkce
 //function název() {}
 function cheats() {
     console.log("Cheats on");
     numberOfCookies += 1000000;
-    counter.innerText = "Cookies: " + numberOfCookies;
+    counter.innerText = "Diamonds: " + numberOfCookies;
 }
 
 
@@ -80,7 +79,7 @@ function cheats() {
 
 const cheatsTwo = () => {
     numberOfCookies *= 2;
-    counter.innerText = "Cookies: " + numberOfCookies;
+    counter.innerText = "Diamonds: " + numberOfCookies;
 }
 cheats();
-
+*/

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,23 @@
     <link rel="shortcut icon" href=".//res/img/cookie2.png" type="image/x-icon">
 </head>
 <body>
+<embed src="./res/img/music.mp4" loop="true" autostart="true">
+<div class="buttons">
+    <button class="upgradeButton" id="clickUpgrade"><p class="upgrade"> <img src="./res/img/pngwing.com.png" alt="">Fortune: 20</p></button>
+    <button class="upgradeButton" id="autoclickUpgrade"> <img src="./res/img/villager.jpg" alt=""> Miner: 100</button>
+</div>
+ 
 <div class="container">
-    <img id="cookie" src="./res/img/cookie.jpg" alt="Cookie">
-    <p id="counter">Cookies: 0</p>
+    <img id="Cobblestone" src="./res/img/Diamond_Ore.webp" alt="Cobblestone">
+    <p id="counter"> Diamonds: 0</p>
     
 </div>
-<div class="buttons">
-    <button class="upgradeButton" id="clickUpgrade">Click upgrade: 20</button>
-    <button class="upgradeButton" id="autoclickUpgrade">Autoclick upgrade: 100</button>
+
+<div class="hotbar">
+<img id="hotbar" src="./res/img/hotbar4.png" alt="hotbar">
 </div>
+
+
     <script src="./res/js/main.js"></script>
 </body>
 </html>
